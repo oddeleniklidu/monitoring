@@ -1,6 +1,10 @@
 ---
 title: ID, názvy a data zveřejnění videí VLADĚNAplus
+wide: true
+page_class: video-list
 ---
-<p><a href="index.html">Zpět na případ</a> · <a href="VLADENAplus_ID_nazvy_data.md" download>Stáhnout Markdown</a></p>
+<a class="back-link" href="index.html">← Zpět na případ</a>
+<p><a href="VLADENAplus_ID_nazvy_data.md" download>Stáhnout původní Markdown</a></p>
 {% capture video_list %}{% include_relative VLADENAplus_ID_nazvy_data.md %}{% endcapture %}
-{{ video_list | markdownify }}
+{% assign rendered_list = video_list | markdownify %}
+{{ rendered_list | replace: '<table>', '<div class="table-region" role="region" aria-label="ID, názvy a data zveřejnění videí" tabindex="0"><table>' | replace: '</table>', '</table></div>' | replace: '<th>', '<th scope="col">' }}
