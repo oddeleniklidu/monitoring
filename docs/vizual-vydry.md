@@ -1,15 +1,26 @@
-# Vizuál Vydry s lucernou
+# Vizuál Vydry
 
-V době úpravy M1.1 není v tomto repozitáři dodaný obrázek ani video. Web proto používá typografický titulní list na tmavém pozadí. Nejde o hotovou náhradu dodaného vizuálu.
+## Aktuální motiv
 
-## Kam nahrát obrázek
+`assets/images/vydra-archivar-tablet-3x2.png` — Vydra jako archivář mezi starými regály s pavučinami. Drží jedno zařízení kombinující sci-fi tablet a čtečku. Poměr stran 3 : 2, rozlišení 1536 × 1024 px.
 
-1. Nahrajte obrázek do `assets/images/vydra-archiv.webp` (lze použít také JPG nebo PNG).
-2. V `_config.yml` změňte `archive_image: null` na `archive_image: "/assets/images/vydra-archiv.webp"`.
-3. Obrázek a změnu nastavení zveřejněte ve větvi `main`. GitHub Pages web znovu sestaví.
+Obrázek vznikl na výslovný navazující požadavek uživatele úpravou dodaného souboru `postava-vydra-flegmatik.png` pomocí ImageGen. Rozpoznatelná podoba Vydry, sluchátka, šátek a flegmatický výraz zůstaly zachované. Původní portrét je stále uložený a používá se jako záloha.
 
-Stejné soubory a nastavení použijte v repozitářích `Sanony` i `monitoring`.
+Historický prostor je pouze součástí úvodní ilustrace. Tlačítka, texty, karty a tabulky zůstávají moderní a tmavé.
 
-Motiv: Vydra s lucernou ve starobylém archivu. Prostor pro text je vlevo; postava a lucerna by měly být spíše vpravo. Doporučená šířka alespoň 1600 px, poměr přibližně 16 : 9, velikost ideálně do 500 kB. Na telefonu se výřez zúží; ověřte, že zůstane vidět postava i lucerna. Obrázek je dekorativní, veškeré informace jsou samostatně v textu.
+## Nastavení
 
-Rozložení už obsahuje vrstvu pro obrázek a ztmavení pod textem. Dokud je nastavení `null`, nevzniká žádný neplatný požadavek na chybějící soubor. Video se automaticky nepřehrává; pokud má být později použito, zachovejte statický obrázek a respektujte omezení pohybu uživatele.
+```yaml
+archive_image: "/assets/images/vydra-archivar-tablet-3x2.png"
+archive_image_alt: "Vydra archivář mezi starými regály s pavučinami drží sci-fi tablet s integrovanou čtečkou"
+archive_image_width: 1536
+archive_image_height: 1024
+```
+
+Stejné nastavení i obrázek udržujte v obou repozitářích. Nastavením `archive_image: null` se vrátí původní dodaný portrét. Při výměně upravte také alternativní popis a rozměry. Obrázek se neanimuje ani automaticky nepřehrává video.
+
+## Rozhraní
+
+Společný styl je v `assets/archive.css`, struktura v `_layouts/default.html` a `_includes/entrance.html`. Inter a Barlow Condensed se načítají z místních souborů v `assets/fonts/`, kde jsou i licence.
+
+Obsah Markdownu a původní adresy zůstávají zachované. Na mobilu se posouvají do stran jen tabulky, nikoliv celá stránka.

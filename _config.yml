@@ -21,4 +21,7 @@ readme_index:
   enabled: false
 
 # Viz docs/vizual-vydry.md.
-archive_image: null
+archive_image: "/assets/images/vydra-archivar-tablet-3x2.png"
+archive_image_alt: "Vydra archivář mezi starými regály s pavučinami drží sci-fi tablet s integrovanou čtečkou"
+archive_image_width: 1536
+archive_image_height: 1024

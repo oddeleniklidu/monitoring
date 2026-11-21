@@ -6,13 +6,14 @@
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <title>{{ page.title | escape }} · Vydřin archiv</title>
+  <link rel="stylesheet" href="{{ '/assets/fonts/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/archive.css' | relative_url }}">
 </head>
 <body>
   <a class="skip-link" href="#obsah">Přejít na obsah</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="/Sanony/">Oddělení klidu / Vydřin archiv</a>
+      <a class="brand" href="/Sanony/"><span class="brand-mark" aria-hidden="true">OK</span><span>ODDĚLENÍ KLIDU<span class="brand-subtitle">Vydřin archiv</span></span></a>
       <nav aria-label="Hlavní navigace">
         <a href="/Sanony/#sanony"{% if site.baseurl == '/Sanony' %} aria-current="page"{% endif %}>Šanony</a>
         <a href="/monitoring/#monitoring"{% if site.baseurl == '/monitoring' %} aria-current="page"{% endif %}>Monitoring</a>
