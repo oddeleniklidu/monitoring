@@ -16,4 +16,4 @@ Kontrola PR sestaví Jekyll, prověří místní odkazy a nabídne sestavený we
 
 ## Vizuální identita M1.2
 
-Tmavé digitální rozhraní Oddělení klidu, zelený akcent, místně hostované fonty Inter a Barlow Condensed a dodaný originální portrét Vydry. Změna se týká prezentace; obsah případů a zdrojová data se neupravují. [Vizuály a jejich nastavení](docs/vizual-vydry.md).
+Tmavé digitální rozhraní Oddělení klidu, zelený akcent, místně hostované fonty Inter a Barlow Condensed a Vydra v roli archiváře s kombinovaným tabletem a čtečkou (úprava dodané postavy na výslovné zadání uživatele). Změna se týká prezentace; obsah případů a zdrojová data se neupravují. [Vizuály a jejich nastavení](docs/vizual-vydry.md).

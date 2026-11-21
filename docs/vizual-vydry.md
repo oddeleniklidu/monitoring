@@ -1,20 +1,26 @@
 # Vizuál Vydry
 
-## M1.2 — použitý originál
+## Aktuální motiv
 
-Web používá dodaný soubor `assets/images/postava-vydra-flegmatik.png`: Vydru se sluchátky a mikrofonem. Obrázek je beze změn, nejde o novou ani upravenou AI ilustraci. Jeho původní barevné pozadí je součástí obrázku, nikoli barvou rozhraní.
+`assets/images/vydra-archivar-tablet-3x2.png` — Vydra jako archivář mezi starými regály s pavučinami. Drží jedno zařízení kombinující sci-fi tablet a čtečku. Poměr stran 3 : 2, rozlišení 1536 × 1024 px.
 
-V repozitáři není původní obraz Vydry s lucernou ve starobylém archivu. Historické prostředí proto není doplněné náhradním obrázkem. Pokud bude originál dodaný, nahrajte jej například do `assets/images/vydra-archiv.webp` a v `_config.yml` nastavte:
+Obrázek vznikl na výslovný navazující požadavek uživatele úpravou dodaného souboru `postava-vydra-flegmatik.png` pomocí ImageGen. Rozpoznatelná podoba Vydry, sluchátka, šátek a flegmatický výraz zůstaly zachované. Původní portrét je stále uložený a používá se jako záloha.
+
+Historický prostor je pouze součástí úvodní ilustrace. Tlačítka, texty, karty a tabulky zůstávají moderní a tmavé.
+
+## Nastavení
 
 ```yaml
-archive_image: "/assets/images/vydra-archiv.webp"
-archive_image_alt: "Vydra s lucernou ve starobylém archivu"
+archive_image: "/assets/images/vydra-archivar-tablet-3x2.png"
+archive_image_alt: "Vydra archivář mezi starými regály s pavučinami drží sci-fi tablet s integrovanou čtečkou"
+archive_image_width: 1536
+archive_image_height: 1024
 ```
 
-Nastavení proveďte v obou repozitářích. Obrázek se použije výhradně v úvodní části; nemění vzhled digitálních karet, filtrů ani tabulek. Při `archive_image: null` zůstává zobrazený dodaný portrét. Obrázky se automaticky neanimují a videa se nepřehrávají.
+Stejné nastavení i obrázek udržujte v obou repozitářích. Nastavením `archive_image: null` se vrátí původní dodaný portrét. Při výměně upravte také alternativní popis a rozměry. Obrázek se neanimuje ani automaticky nepřehrává video.
 
 ## Rozhraní
 
-Společný styl je v `assets/archive.css`, struktura v `_layouts/default.html` a `_includes/entrance.html`. Inter a Barlow Condensed se načítají z místních souborů v `assets/fonts/`, kde jsou i licence. Stejné prezentační soubory se udržují v `Sanony` i `monitoring`.
+Společný styl je v `assets/archive.css`, struktura v `_layouts/default.html` a `_includes/entrance.html`. Inter a Barlow Condensed se načítají z místních souborů v `assets/fonts/`, kde jsou i licence.
 
-Obsah Markdownu a původní adresy zůstávají zachované. Na šířce mobilu se posouvají do stran jen tabulky, nikoliv celá stránka.
+Obsah Markdownu a původní adresy zůstávají zachované. Na mobilu se posouvají do stran jen tabulky, nikoliv celá stránka.
