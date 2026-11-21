@@ -1,5 +1,5 @@
 title: Monitoring
-description: Kontroly dostupnosti veřejného internetového obsahu.
+description: Vydřin archiv Oddělení klidu. Šanony, dokumenty a monitoring internetového obsahu.
 lang: cs
 url: "https://oddeleniklidu.github.io"
 baseurl: "/monitoring"
@@ -7,6 +7,8 @@ repository_url: "https://github.com/oddeleniklidu/monitoring"
 markdown: kramdown
 exclude:
   - README.md
+  - docs
+  - scripts
 defaults:
   - scope:
       path: ""
@@ -17,3 +19,6 @@ relative_links:
   enabled: false
 readme_index:
   enabled: false
+
+# Viz docs/vizual-vydry.md.
+archive_image: null

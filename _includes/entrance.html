@@ -1,0 +1,14 @@
+<section class="archive-entrance{% if site.archive_image %} has-art{% endif %}" aria-labelledby="archive-title">
+  {% if site.archive_image %}<img class="archive-art" src="{{ site.archive_image | relative_url }}" alt="" fetchpriority="high">{% endif %}
+  <div class="entrance-inner"><div class="entrance-copy">
+    <p class="eyebrow">Oddělení klidu · Veřejný archiv</p>
+    <div class="entrance-rule" aria-hidden="true"></div>
+    <h1 id="archive-title">VYDŘIN ARCHIV</h1>
+    <p class="archive-motto">Internet zapomíná. Vydra ne.</p>
+    <p class="keeper">Správce archivu: Vydra</p>
+  </div></div>
+</section>
+<ul class="archive-doors" aria-label="Oddělení archivu">
+  <li><a href="/Sanony/#sanony"><span class="door-number" aria-hidden="true">I.</span><span><span class="door-name">ŠANONY</span><span class="door-description">Pátrání, kauzy a dokumenty.</span></span><span class="door-arrow" aria-hidden="true">↗</span></a></li>
+  <li><a href="/monitoring/#monitoring"><span class="door-number" aria-hidden="true">II.</span><span><span class="door-name">MONITORING</span><span class="door-description">Dostupnost videí a změny internetového obsahu.</span></span><span class="door-arrow" aria-hidden="true">↗</span></a></li>
+</ul>
