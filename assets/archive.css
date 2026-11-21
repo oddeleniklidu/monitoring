@@ -9,6 +9,7 @@
   --green: #00ff00;
   --cyan: #5de8f5;
   --red: #ff8a8a;
+  --yellow: #ffe082;
   --line: #47565c;
   --heading: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -96,7 +97,10 @@ th { background: #283337; color: var(--text); font-weight: 700; }
 thead th { position: sticky; top: 0; z-index: 1; }
 tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover { outline: 1px solid var(--cyan); outline-offset: -1px; }
-tbody tr[data-status="private"] { background: #192b30; }
+tbody tr[data-status="private"] { background: #3a3218; }
+tbody tr[data-status="private"] td:first-child { box-shadow: inset 3px 0 #e8c34f; }
+tbody tr[data-status="private"] a,
+tbody tr[data-status="private"] td:nth-child(3) { color: var(--yellow); }
 tbody tr[data-status="blocked"] { background: #342329; }
 tbody tr[data-status="blocked"] td:last-child { color: var(--red); }
 tbody tr[data-status="offline"] { background: #282c35; }
