@@ -12,3 +12,8 @@ defaults:
       path: ""
     values:
       layout: default
+
+relative_links:
+  enabled: false
+readme_index:
+  enabled: false
