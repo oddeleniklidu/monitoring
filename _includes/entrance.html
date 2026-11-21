@@ -1,14 +1,20 @@
-<section class="archive-entrance{% if site.archive_image %} has-art{% endif %}" aria-labelledby="archive-title">
-  {% if site.archive_image %}<img class="archive-art" src="{{ site.archive_image | relative_url }}" alt="" fetchpriority="high">{% endif %}
-  <div class="entrance-inner"><div class="entrance-copy">
-    <p class="eyebrow">Oddělení klidu · Veřejný archiv</p>
-    <div class="entrance-rule" aria-hidden="true"></div>
-    <h1 id="archive-title">VYDŘIN ARCHIV</h1>
+<section class="archive-hero" aria-labelledby="archive-title">
+  <div class="hero-copy">
+    <p class="eyebrow">Oddělení klidu / Veřejný archiv</p>
+    <h1 id="archive-title">VYDŘIN <span>ARCHIV</span></h1>
     <p class="archive-motto">Internet zapomíná. Vydra ne.</p>
-    <p class="keeper">Správce archivu: Vydra</p>
-  </div></div>
+    <p class="hero-note">Šanony, dokumenty a záznamy změn internetového obsahu.</p>
+  </div>
+  <figure class="hero-visual">
+    {% if site.archive_image %}
+    <img src="{{ site.archive_image | relative_url }}" alt="{{ site.archive_image_alt | default: 'Vydra s lucernou ve starobylém archivu' | escape }}" fetchpriority="high">
+    {% else %}
+    <img src="{{ '/assets/images/postava-vydra-flegmatik.png' | relative_url }}" width="1050" height="1022" alt="Vydra se sluchátky u mikrofonu" fetchpriority="high">
+    {% endif %}
+    <figcaption><strong>VYDRA</strong><span>Správce archivu</span></figcaption>
+  </figure>
 </section>
-<ul class="archive-doors" aria-label="Oddělení archivu">
-  <li><a href="/Sanony/#sanony"><span class="door-number" aria-hidden="true">I.</span><span><span class="door-name">ŠANONY</span><span class="door-description">Pátrání, kauzy a dokumenty.</span></span><span class="door-arrow" aria-hidden="true">↗</span></a></li>
-  <li><a href="/monitoring/#monitoring"><span class="door-number" aria-hidden="true">II.</span><span><span class="door-name">MONITORING</span><span class="door-description">Dostupnost videí a změny internetového obsahu.</span></span><span class="door-arrow" aria-hidden="true">↗</span></a></li>
+<ul class="archive-sections" aria-label="Oddělení archivu">
+  <li><a href="/Sanony/#sanony"><span class="section-number" aria-hidden="true">01</span><span><span class="section-name">ŠANONY</span><span class="section-description">Pátrání, kauzy a dokumenty.</span></span><span class="section-arrow" aria-hidden="true">→</span></a></li>
+  <li><a href="/monitoring/#monitoring"><span class="section-number" aria-hidden="true">02</span><span><span class="section-name">MONITORING</span><span class="section-description">Dostupnost videí a změny internetového obsahu.</span></span><span class="section-arrow" aria-hidden="true">→</span></a></li>
 </ul>

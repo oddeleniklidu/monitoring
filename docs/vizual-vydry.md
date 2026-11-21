@@ -1,15 +1,20 @@
-# Vizuál Vydry s lucernou
+# Vizuál Vydry
 
-V době úpravy M1.1 není v tomto repozitáři dodaný obrázek ani video. Web proto používá typografický titulní list na tmavém pozadí. Nejde o hotovou náhradu dodaného vizuálu.
+## M1.2 — použitý originál
 
-## Kam nahrát obrázek
+Web používá dodaný soubor `assets/images/postava-vydra-flegmatik.png`: Vydru se sluchátky a mikrofonem. Obrázek je beze změn, nejde o novou ani upravenou AI ilustraci. Jeho původní barevné pozadí je součástí obrázku, nikoli barvou rozhraní.
 
-1. Nahrajte obrázek do `assets/images/vydra-archiv.webp` (lze použít také JPG nebo PNG).
-2. V `_config.yml` změňte `archive_image: null` na `archive_image: "/assets/images/vydra-archiv.webp"`.
-3. Obrázek a změnu nastavení zveřejněte ve větvi `main`. GitHub Pages web znovu sestaví.
+V repozitáři není původní obraz Vydry s lucernou ve starobylém archivu. Historické prostředí proto není doplněné náhradním obrázkem. Pokud bude originál dodaný, nahrajte jej například do `assets/images/vydra-archiv.webp` a v `_config.yml` nastavte:
 
-Stejné soubory a nastavení použijte v repozitářích `Sanony` i `monitoring`.
+```yaml
+archive_image: "/assets/images/vydra-archiv.webp"
+archive_image_alt: "Vydra s lucernou ve starobylém archivu"
+```
 
-Motiv: Vydra s lucernou ve starobylém archivu. Prostor pro text je vlevo; postava a lucerna by měly být spíše vpravo. Doporučená šířka alespoň 1600 px, poměr přibližně 16 : 9, velikost ideálně do 500 kB. Na telefonu se výřez zúží; ověřte, že zůstane vidět postava i lucerna. Obrázek je dekorativní, veškeré informace jsou samostatně v textu.
+Nastavení proveďte v obou repozitářích. Obrázek se použije výhradně v úvodní části; nemění vzhled digitálních karet, filtrů ani tabulek. Při `archive_image: null` zůstává zobrazený dodaný portrét. Obrázky se automaticky neanimují a videa se nepřehrávají.
 
-Rozložení už obsahuje vrstvu pro obrázek a ztmavení pod textem. Dokud je nastavení `null`, nevzniká žádný neplatný požadavek na chybějící soubor. Video se automaticky nepřehrává; pokud má být později použito, zachovejte statický obrázek a respektujte omezení pohybu uživatele.
+## Rozhraní
+
+Společný styl je v `assets/archive.css`, struktura v `_layouts/default.html` a `_includes/entrance.html`. Inter a Barlow Condensed se načítají z místních souborů v `assets/fonts/`, kde jsou i licence. Stejné prezentační soubory se udržují v `Sanony` i `monitoring`.
+
+Obsah Markdownu a původní adresy zůstávají zachované. Na šířce mobilu se posouvají do stran jen tabulky, nikoliv celá stránka.
