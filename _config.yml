@@ -1,0 +1,14 @@
+title: Monitoring
+description: Kontroly dostupnosti veřejného internetového obsahu.
+lang: cs
+url: "https://oddeleniklidu.github.io"
+baseurl: "/monitoring"
+repository_url: "https://github.com/oddeleniklidu/monitoring"
+markdown: kramdown
+exclude:
+  - README.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
