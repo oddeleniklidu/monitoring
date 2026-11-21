@@ -2,6 +2,8 @@
 
 Jedná se o veřejná data: ID videí, názvy a data zveřejnění pocházejí z veřejných metadat YouTube uchovaných v Archiváři Oddělení klidu. Některá videa již nemusí být veřejně dostupná. Seznam vychází z podkladů kontroly z 20. 11. 2026. Data zveřejnění jsou uvedena v českém časovém pásmu (Europe/Prague).
 
+Tato zdrojová data lze použít jako výchozí podklad pro analýzu smazání, skrytí (nastavení jako soukromé) nebo blokování videí, zjišťování změn jejich názvů a ověřování tvrzení o tom, kdy byla videa zveřejněna. Pomocí ID lze propojit původní záznam s pozdější kontrolou stejného videa a porovnat jeho stav i název. Samotný seznam neprokazuje důvod nedostupnosti; rozlišení smazání, skrytí a blokace vyžaduje další ověření podle dostupných hlášení YouTube. Uvedená data zveřejnění slouží k porovnání s tvrzeními o datu publikace, nikoli automaticky s datem události zachycené ve videu.
+
 | ID videa | Název videa | Datum zveřejnění |
 | --- | --- | --- |
 | YnkFFFHD1ks | DNESKA MĚL MAJZLÍK ŠPATNÝ DEN - 5 LET NATVRDO, BEZ ŘIDIČÁKU A BEZ ADÉLY? #soud #shopaholicadel | 18.11.2026 |
