@@ -17,8 +17,9 @@
     <div class="header-inner">
       <a class="brand" href="/Sanony/"><img class="brand-avatar" src="{{ '/assets/favicon-vydra-96.png' | relative_url }}" width="44" height="44" alt=""><span>ODDĚLENÍ KLIDU<span class="brand-subtitle">Vydřin archiv</span></span></a>
       <nav aria-label="Hlavní navigace">
-        <a href="/Sanony/#sanony"{% if site.baseurl == '/Sanony' %} aria-current="page"{% endif %}>Šanony</a>
+        <a href="/Sanony/#sanony"{% if site.baseurl == '/Sanony' and page.about != true %} aria-current="page"{% endif %}>Šanony</a>
         <a href="/monitoring/#monitoring"{% if site.baseurl == '/monitoring' %} aria-current="page"{% endif %}>Monitoring</a>
+        <a href="/Sanony/o-archivu.html"{% if page.about %} aria-current="page"{% endif %}>O Vydřině archivu</a>
       </nav>
     </div>
   </header>
